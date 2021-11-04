@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../styles/main.css" rel="stylesheet" />
+ <!--    <link href="../styles/main.css" rel="stylesheet" />
     <link href="../styles/sec.css" rel="stylesheet" />
-    <link href="../styles/third.css" rel="stylesheet" />
+    <link href="../styles/third.css" rel="stylesheet" /> -->
     <title>My site</title>
   </head>
 
@@ -42,28 +42,58 @@
 
       <div class="card">
         <dev class="left">
-          <img class="abt" src="../media/sponge.jpg" alt="spongebob" />
+       <!--    <img class="abt" src="../images/sponge.jpg" alt="spongebob" /> -->
         </dev>
 
         <dev class="right">
-          <p>
-            <label for="w3review">Enter zip code Here</label>
+          <form class="city" onsubmit="return Client.handleSubmit(event)">
+            <p>Please enter the city's name here </p>
+            <input
+              class="name"
+              type="text"
+              name="input"
+              value=""
+             
+              placeholder="Enter city name here"
+            />
+            <input
+              type="submit"
+              class="button"
+              name=""
+              value="submit"
+              onclick="return Client.getDay()"
+              onsubmit="return Client.getDay()"
+            />
+            
+
+            <form class="date" onsubmit="return Client.getDay()">
+              <p>Please enter Your travel date </p>
+              <input
+                class="name"
+                id="countDate"
+                type="text"
+                name="input"
+                value=""
+               
+                placeholder="Ex Jul 25, 2021"
+              />
+              <input
+                type="submit"
+                class="button"
+                name=""
+                value="submit"
+                onclick="return Client.getDay()"
+                onsubmit="return Client.getDay()"
+              />
+          <!-- <p>
+            <label for="date">Enter date Here separated by / </label>
           </p>
 
           <p>
-            <textarea id="w3review" name="w3review" rows="3" cols="100" >
+            <textarea id="travelDate" name="date" rows="3" cols="100" >
                 </textarea>
                 <input type="submit" value="Submit">
-          </p>
-          <p>
-            <label for="w3review">Enter date Here separated by / </label>
-          </p>
-
-          <p>
-            <textarea id="w3review" name="w3review" rows="3" cols="100" >
-                </textarea>
-                <input type="submit" value="Submit">
-          </p>
+          </p> -->
         </dev>
       </div>
     </div>

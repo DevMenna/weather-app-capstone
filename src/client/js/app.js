@@ -1,10 +1,8 @@
 /* Global Variables */
-const baseURL = "http://api.openweathermap.org/data/2.5/weather?zip=";
-const apiKey = "&appid=392991b9a329ba78de92bc7ffe42e778";
-const units = "&units=imperial";
+
 // Create a new date instance dynamically with JS
 
-const getData = async (url = "") => {
+/* const getData = async (url = "") => {
   const response = await fetch(url);
 
   try {
@@ -13,25 +11,6 @@ const getData = async (url = "") => {
     return receivedData;
   } catch (error) {
     console.log("error", error);
-  }
-};
-
-const postData = async (url = "", data = {}) => {
-  try {
-    const res = await fetch(url, {
-      method: "POST",
-      credentials: "same-origin",
-      headers: {
-        "Content-Type": "application/json",
-      },
-
-      body: JSON.stringify(data),
-    });
-    const response = await res.json();
-    console.log(response);
-    return response;
-  } catch (error) {
-    console.log("Error", error);
   }
 };
 
@@ -55,25 +34,4 @@ const daysDate = () => {
   return newDate;
 };
 
-const run = async () => {
-  const zCode = document.getElementById("zip").value;
-
-  try {
-    const weather = await fetch(baseURL + zCode + units + apiKey);
-    const weatherData = await weather.json();
-
-    const feeling = document.getElementById("feelings").value;
-    const weData = {
-      date: daysDate(),
-      temp: weatherData.main.temp,
-      feelings: feeling,
-    };
-    await postData("http://localhost:3030/add", weData);
-
-    await updateUi();
-  } catch (error) {
-    console.log("error", error);
-  }
-};
-
-document.getElementById("generate").addEventListener("click", run);
+document.getElementById("generate").addEventListener("click", run); */*/

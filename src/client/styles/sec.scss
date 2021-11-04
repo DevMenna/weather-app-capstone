@@ -30,7 +30,7 @@
   padding: 70px;
   width: 168%;
   z-index: 0;
-  height: 60%;
+  height: 68%;
 }
 
 .about .card .left {
@@ -50,6 +50,15 @@
     height: 200px;
 } */
 
-textarea {
+.name {
+  height: 90px;
   background-color: #e9f2fa;
+  width: 90%;
+  margin-bottom: 20px;
+  color: #2b6777;
+}
+
+.button:hover {
+  background-color: #20687ca9;
+  cursor: pointer;
 }
