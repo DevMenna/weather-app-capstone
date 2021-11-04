@@ -4,10 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
-  margin-bottom: 185px;
-  margin-left: 0px;
-  padding-bottom: 99px;
+
 }
 
 .about .title {
@@ -49,6 +46,14 @@
 .about .left img {
     height: 200px;
 } */
+
+#name {
+  height: 90px;
+  background-color: #e9f2fa;
+  width: 90%;
+  margin-bottom: 20px;
+  color: #2b6777;
+}
 
 .name {
   height: 90px;

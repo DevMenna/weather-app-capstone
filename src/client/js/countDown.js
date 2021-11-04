@@ -2,38 +2,28 @@ const intoSeconds = () => {
   const flightDate = document.getElementById("countDate").value;
   const count = new Date(flightDate);
   const seconds = count.getTime() / 1000;
-  console.log(seconds);
+
   return seconds;
 };
 
-/* const getDay = () => {
-  const countDate = new Date(document.getElementById("countDate").value);
-  var counter = setInterval(function () {
-    const countDownDate = countDate.getTime;
-  }, 1000);
-  let now = new Date().getTime();
-  let timeleft = countDownDate - now;
-
-  let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-
-
-}; */
 
 const getDay = () => {
   const func = setInterval(() => {
-    const currentSecs = intoSeconds();
-    let now = new Date().getTime() / 1000;
-    let timeLeft = currentSecs - now;
-    //to get the actual
-    const dateLeft = counter(timeLeft);
-    console.log(dateLeft);
+   
+    const futureDate = intoSeconds() 
+    const currentDate = counter()
+    const timeLeft = futureDate - currentDate
+    const fullTime = (new Date(timeLeft * 1000).toISOString().substr(8, 11)).split("T")
+    const days = fullTime[0]
+    const dayTime = fullTime[1].split(":")
+    console.log(days ,"___>" , dayTime)
   }, 1000);
 };
 
-const counter = (timeLeft) => {
-  var date = new Date(null);
-  date.setSeconds(timeLeft);
-  return date;
+const counter = () => {
+  const count = new Date();
+  const seconds = count.getTime() / 1000;
+  return seconds;
 };
 
 export { getDay };

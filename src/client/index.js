@@ -6,4 +6,6 @@ import "./styles/main.scss";
 import "./styles/sec.scss";
 import "./styles/third.scss";
 
+
+
 export { postData, handleSubmit, getDay };
