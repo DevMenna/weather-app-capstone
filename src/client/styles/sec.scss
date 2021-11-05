@@ -1,11 +1,25 @@
+* {
+  background: url("https://pixabay.com/get/g62d48f217dcd3dd7b49c37849df7bc4a1a0e7932a8d29dd5d8ac68f067c7d512bebd3e5df0849b5b319c69afe3ea99dab411e813e42bcff1e27459fe7ee61a6d_1280.jpg ") no-repeat center center fixed ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .about {
   background-color: #e9f2fa;
-  display: flex;
+/*   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  
+  margin: auto;
+width: 60%;
+border: 5px solid #FFFF00;
+padding: 10px;
 
 }
+
 
 .about .title {
   text-align: center;
