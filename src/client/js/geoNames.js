@@ -22,7 +22,20 @@ async function handleSubmit(event) {
     console.log(picData)
    
     const pic = await postData("http://localhost:8080/pix", picData);
-    console.log(pic)
+    const wePic = pic.hits[0].largeImageURL
+
+     const result = document.createElement("div")
+    result.classList.add("weather")
+    const newFig = document.createElement("figure")
+    const newPic = document.createElement("img")
+    newPic.setAttribute("src" , wePic)
+    newFig.append(newPic)
+    const newFigCaption = document.createElement("figcaption") 
+    newFigCaption.textContent="The expected weather "+ weatherData.data[0]
+    newFig.append(newFigCaption)
+    result.append(newFig)
+    document.getElementsByClassName("content").appendChild(result);  
+
 
   } catch (error) {
     console.log("error", error);

@@ -7,7 +7,8 @@ const intoSeconds = () => {
 };
 
 
-const getDay = () => {
+const getDay = (event) => {
+  event.preventDefault()
   const func = setInterval(() => {
    
     const futureDate = intoSeconds() 
