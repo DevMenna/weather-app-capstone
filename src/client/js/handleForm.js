@@ -1,8 +1,9 @@
 import { handleSubmit } from "./geoNames";
+import { getDay } from "./countDown";
 
 async function handleForm(event) {
   event.preventDefault();
-
+  getDay();
   const weatherData = await handleSubmit();
   const flightDate = document.getElementById("countDate").value;
 

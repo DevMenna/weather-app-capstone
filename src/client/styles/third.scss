@@ -1,5 +1,10 @@
+* {
+  font-family: cursive;
+}
+
 #entered-data {
-  margin-top: 51vw;
+  margin-top: 70vw;
+  padding-right: 16px;
 }
 
 .output {
@@ -11,4 +16,39 @@
 #state {
   width: 900px;
   height: 500px;
+}
+
+#countDown h1 {
+  text-align: center;
+}
+
+#countDown .cD,
+.letters {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#countDown .cD li {
+  font-size: 70px;
+}
+
+.letters {
+  font-size: 40px;
+}
+
+#countDown .cD li {
+  background-color: black;
+  padding: 5px;
+  color: white;
+  border: 3px double;
+}
+
+.letters {
+  margin-bottom: 0;
+}
+
+#weather {
+  margin-top: 45px;
 }
