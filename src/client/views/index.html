@@ -40,9 +40,9 @@
 
  <div class="flight-data">
 
- <form id="entered-data" onsubmit="return Client.handleSubmit(event)">
-    <div class="city" onsubmit="return Client.handleSubmit(event)">
-      <h1 class="title">Weather app</h1>
+ <form id="entered-data" onsubmit="return Client.handleForm(event)">
+    <div class="city" onsubmit="return Client.handleForm(event)">
+      <h1 class="title">Travel app</h1>
       <p>Enter the city's name here </p>
       <input
         id="name"
@@ -52,19 +52,6 @@
        
         placeholder="Enter city name here"
       />
-      <input
-              type="submit"
-              class="button"
-              name=""
-              value="submit"
-              onclick="return Client.handleSubmit(event)"
-              onsubmit="return Client.handleSubmit(event)"
-            />
-    </div>
- </form>
-
-  
-    <form class="date" onsubmit="return Client.getDay(event)">
       <div class="city">
         <p>Enter Your flight's date </p>
         <input
@@ -74,18 +61,31 @@
           name="input"
           value=""
          
-          placeholder="Ex Jul 25, 2021"
+          placeholder="Ex YY-MM-DD "
         />
-        <input
-          type="submit"
-          class="button"
-          name=""
-          value="submit"
-          onclick="return Client.getDay(event)"
-          onsubmit="return Client.getDay(event)">
+
       </div>
 
-    </form>
+
+    </div>
+
+          <input
+              type="submit"
+              class="button"
+              name=""
+              value="submit"
+              onclick="return Client.handleForm(event)"
+              onsubmit="return Client.handleForm(event)"
+            /> 
+  </form>
+<div class="output">
+  <figure id="weather" >
+    <img id="state" src="https://getvectorlogo.com/wp-content/uploads/2019/11/output-vector-logo.png">
+    <figcaption id="weatherState">     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo incidunt repellendus, mollitia, dolore error nulla enim, molestias nam placeat cum? Maiores commodi soluta quod accusantium mollitia officia eligendi sapiente.
+    </figcaption>
+
+  </figure>
+</div>
 
             
   </body>

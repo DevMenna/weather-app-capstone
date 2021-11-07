@@ -1,12 +1,14 @@
-
 .content {
-  background: url("https://media.istockphoto.com/photos/dark-blue-storm-cloudy-sky-background-picture-id1154430991?k=20&m=1154430991&s=170667a&w=0&h=YmDPok-WqMplsghP8i9mnuMqnUZrOfTwilFRDX-CXig=") no-repeat center center fixed ; 
+  background: url("https://media.istockphoto.com/photos/dark-blue-storm-cloudy-sky-background-picture-id1154430991?k=20&m=1154430991&s=170667a&w=0&h=YmDPok-WqMplsghP8i9mnuMqnUZrOfTwilFRDX-CXig=")
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 49vw
-
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flight-data {
@@ -27,7 +29,7 @@
   opacity: 83%;
 }
 
- .flight-data .title {
+.flight-data .title {
   text-align: center;
   font-family: cursive;
   color: #2b6777;
@@ -36,15 +38,14 @@
   margin-right: 22px;
 }
 
-
-#name , .name {
+#name,
+.name {
   height: 43px;
   background-color: #e9f2fa;
   width: 90%;
   margin-bottom: 20px;
   color: #2b6777;
 }
-
 
 input {
   background-color: #2b6777;
@@ -58,4 +59,3 @@ input {
   background-color: #20687ca9;
   cursor: pointer;
 }
- 
