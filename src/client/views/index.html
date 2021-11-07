@@ -12,13 +12,14 @@
 
   <body>
     <!--the header section-->
+    <div class="content">
     <div class="header">
       <div class="nav-bar">
         <div class="links">
           <ul>
             <li>header</li>
             <li>about us</li>
-            <li>image</li>
+            <li>images</li>
             <li>contacts</li>
           </ul>
         </div>
@@ -33,63 +34,77 @@
         </div>
       </div>
 
-
+    </div>
 
     <!--the about section-->
 
- <div class="about">
-     
+ <div class="flight-data">
 
-      <div class="card">
-        <dev class="left">
-          <img class="abt" />
-        </dev>
+ <form id="entered-data" onsubmit="return Client.handleForm(event)">
+    <div class="city" onsubmit="return Client.handleForm(event)">
+      <h1 class="title">Travel app</h1>
+      <p>Enter the city's name here </p>
+      <input
+        id="name"
+        type="text"
+        name="input"
+        value=""
+       
+        placeholder="Enter city name here"
+      />
+      <div class="city">
+        <p>Enter Your flight's date </p>
+        <input
+          class="name"
+          id="countDate"
+          type="text"
+          name="input"
+          value=""
+         
+          placeholder="Ex YY-MM-DD "
+        />
 
-        <dev class="right">
-          <figure class="city" onsubmit="return Client.handleSubmit(event)">
-            <h1 class="title">Travel planner</h1>
-            <p>Please enter the city's name here </p>
-            <input
-              id="name"
-              type="text"
-              name="input"
-              value=""
-             
-              placeholder="Enter city name here"
-            />
-            <input
+      </div>
+
+
+    </div>
+
+          <input
               type="submit"
               class="button"
               name=""
               value="submit"
-              onclick="return Client.handleSubmit(event)"
-              onsubmit="return Client.handleSubmit(event)"
-            />
+              onclick="return Client.handleForm(event)"
+              onsubmit="return Client.handleForm(event)"
+            /> 
+  </form>
+<div class="output">
+  <div id="countDown">
+    <h2 style="text-align: center;">Time left to your flight</h2>
+    <ul class="cD">
+      <li id="DD"></li>
+      <li id="HH"></li>
+      <li id="MM"></li>
+      <li id="SS"></li>
+    </ul>
+    <ul class="letters">
+      <li id="test" >DD</li>
+      <li>HH</li>
+      <li >MM</li>
+      <li >SS</li>
+    </ul>
+  </div>
+  <figure id="weather" >
+    <h2 style="text-align: center;">Expected weather data</h2>
+    <img id="state" src="https://getvectorlogo.com/wp-content/uploads/2019/11/output-vector-logo.png">
+    <figcaption id="weatherState">     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo incidunt repellendus, mollitia, dolore error nulla enim, molestias nam placeat cum? Maiores commodi soluta quod accusantium mollitia officia eligendi sapiente.
+    </figcaption>
+
+  </figure>
+
+  
+</div>
+
             
-
-            <form class="date" onsubmit="return Client.getDay()">
-              <p>Please enter Your travel date </p>
-              <input
-                class="name"
-                id="countDate"
-                type="text"
-                name="input"
-                value=""
-               
-                placeholder="Ex Jul 25, 2021"
-              />
-              <input
-                type="submit"
-                class="button"
-                name=""
-                value="submit"
-                onclick="return Client.getDay()"
-                onsubmit="return Client.getDay()"
-              /> 
-
-              <!-- <div class="output">
-                <h2>The expected weather :</h2>
-              </div> -->
-       
   </body>
 </html>
