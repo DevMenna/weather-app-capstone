@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const fetch = require("cross-fetch");
 const FormData = require("form-data");
 const dotenv = require("dotenv");
+const exp = require("constants");
 
 dotenv.config();
 
@@ -39,8 +40,8 @@ app.use(function (req, res, next) {
 });
 
 app.get("/", function (req, res) {
-   res.sendFile("dist/index.html");
-/*   res.sendFile(path.resolve("src/client/views/index.html")); */
+   /*  res.sendFile("dist/index.html");  */
+   res.sendFile(path.resolve("src/client/views/index.html")); 
 });
 
 // designates what port the app will listen to for incoming requests
@@ -91,3 +92,12 @@ app.post("/pix", async function (req, res) {
 
   res.send(data);
 });
+
+//for testing 
+
+const sum = (a,b) => {
+  let x = a+b 
+  return x
+}
+
+/* export {sum} */
