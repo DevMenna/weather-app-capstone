@@ -16,7 +16,7 @@
     <div class="header">
       <div class="nav-bar">
         <div class="links">
-          <ul>
+          <ul class="head">
             <li>header</li>
             <li>about us</li>
             <li>images</li>
@@ -28,8 +28,7 @@
           <ul>
             <li>instagram</li>
             <li>facebook</li>
-            <li>twitter</li>
-            <li>whatsapp</li>
+
           </ul>
         </div>
       </div>
@@ -105,6 +104,25 @@
   
 </div>
 
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("/sw.js").then(
+        function (registration) {
+          // Registration was successful
+          console.log(
+            "ServiceWorker registration successful with scope: ",
+            registration.scope
+          );
+        },
+        function (err) {
+          // registration failed :(
+          console.log("ServiceWorker registration failed: ", err);
+        }
+      );
+    });
+  }
+</script>
             
   </body>
 </html>

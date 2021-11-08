@@ -52,3 +52,23 @@
 #weather {
   margin-top: 45px;
 }
+
+
+@media only screen and (max-width: 600px) {
+ #state {
+   width: 71vw;
+ }
+
+ #entered-data {
+  margin-top: 354vw
+ }
+ .flight-data {
+   height: 176vw;
+ }
+ .content {
+   height: 310vw;
+ }
+.header {
+  height: 18vh;
+}
+}
