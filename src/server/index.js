@@ -51,7 +51,7 @@ app.listen(8080, function () {
 
 app.post("/geo", async function (req, res) {
   const baseURL = "http://api.geonames.org/search?";
-  const userName = "&userName=devMenna";
+  const userName = "&userName=addYourUserNameHere";
   const { cityName } = req.body;
 
   let response = await fetch(
@@ -65,7 +65,7 @@ app.post("/geo", async function (req, res) {
 
 app.post("/weather", async function (req, res) {
   const baseURL = "http://api.weatherbit.io/v2.0/forecast/daily?";
-  const apiKey = "76c0e610eeda4c2c872be59c278ff6f3";
+  const apiKey = "addYourApiKeyHere";
   const  {lat , lng}  = req.body;
   console.log(req.body)
  /*  console.log(lat, "====> " ,lng) */
@@ -80,7 +80,7 @@ app.post("/weather", async function (req, res) {
 
 app.post("/pix", async function (req, res) {
   const baseURL = "https://pixabay.com/api/?";
-  const apiKey = "24190646-3243b56664908405d84dd2fd6";
+  const apiKey = "addYourApiKeyHere";
   const  {state}  = req.body;
   console.log(req.body)
  
